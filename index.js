@@ -22,7 +22,7 @@ Repo.prototype.template = function(){
 function forkRepo() {
       const token = ' da4f675e128aa66a149793db2bead57d6c6490a6';
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
-  fetch(`${baseApi}repos/${repo}/forks`, {
+  fetch('https://api.github.com/repos/lsivak/learn-co-curriculum/javascript-fetch-lab', {
     method: 'POST'
     headers: {
       Authorization: `token ${getToken()}`
