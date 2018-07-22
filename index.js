@@ -1,3 +1,7 @@
+const userName = 'lsivak'
+const baseApi = 'https://api.github.com/'
+const fork = `${username}/learn-co-curriculum/javascript-fetch-lab'
+
 function getIssues() {
 }
 
@@ -14,8 +18,9 @@ function forkRepo() {
     const token = ' da4f675e128aa66a149793db2bead57d6c6490a6';
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
   fetch('api.github.com/repos/learn-co-curriculum/javascript-fetch-lab', {
+    method: 'POST'
     headers: {
-      Authorization: `token ${token}`
+      Authorization: `token ${getToken()}`
     }
   }).then(res => res.json()).then(json => console.log(json));
 }
