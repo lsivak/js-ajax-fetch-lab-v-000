@@ -1,6 +1,6 @@
 const userName = 'lsivak'
 const baseApi = 'https://api.github.com/'
-const fork = `${username}/learn-co-curriculum/javascript-fetch-lab'
+const fork = `${username}/learn-co-curriculum/javascript-fetch-lab'`
 
 function getIssues() {
 }
