@@ -20,7 +20,7 @@ function forkRepo() {
   fetch(`${baseApi}repos/${repo}/forks`, {
     method: 'POST'
     headers: {
-      Authorization: `token ${getToken()}`
+      Authorization: `token ${token}`
     }
   }).then(res => {
   let repo = new Repo(res)
