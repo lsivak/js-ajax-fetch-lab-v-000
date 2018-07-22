@@ -8,7 +8,7 @@ const reps = 'learn-co-curriculum/javascript-fetch-lab'
 function getIssues() {
   const token = ' da4f675e128aa66a149793db2bead57d6c6490a6';
 
-fetch(`${forked}/issues`, {
+fetch(`${reps}/issues`, {
   headers: {
     Authorization: `token ${getToken()}`
   }
@@ -37,7 +37,7 @@ function forkRepo() {
   }).then(res => res.json(showForkedRepo(repo))).then(json => console.log(json));
 }
 function Repo(repo){
-  return `<h3>Forked Successfully!<a href="${forked}"> ${forked}</a>`
+  return `<h3>Forked Successfully!<a href="${reps}"> ${reps}</a>`
 
 };
 function showForkedRepo(repo) {
