@@ -1,7 +1,7 @@
 const userName = 'lsivak'
 const baseApi = 'https://api.github.com/'
 const fork = `${userName}/javascript-fetch-lab`
-const repo = 'learn-co-curriculum/javascript-fetch-lab'
+const reps = 'learn-co-curriculum/javascript-fetch-lab'
 
 function getIssues() {
 }
@@ -21,7 +21,7 @@ function forkRepo() {
   body: showForkedRepo(repo)
 };
 
-  fetch(`https://api.github.com/repos/${repo}`, {
+  fetch(`https://api.github.com/repos/${reps}/forks`, {
     method: 'POST',
     body: JSON.stringify(showForkedRepo(repo)),
     headers: {
@@ -30,7 +30,7 @@ function forkRepo() {
   }).then(res => res.json()).then(json => console.log(json));
 }
 function showForkedRepo(repo) {
-  let repo = `${baseApi}repos/${repo}/forks`
+  let repo = `${baseApi}repos/${reps}/forks`
   $('#results').append(repo)
 }
 
