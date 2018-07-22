@@ -4,7 +4,16 @@ const fork = `${userName}/js-ajax-fetch-lab-v-000`
 const reps = 'learn-co-curriculum/javascript-fetch-lab'
   let repo = `${baseApi}repos/${reps}/forks`
   const forked = `${baseApi}repos/${fork}`
+
 function getIssues() {
+  const token = ' da4f675e128aa66a149793db2bead57d6c6490a6';
+
+fetch(`${forked}`, {
+  headers: {
+    Authorization: `token ${getToken()}`
+  }
+}).then(res => res.json()).then(json => console.log(json));
+}
 }
 
 function showIssues(json) {
