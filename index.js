@@ -22,7 +22,7 @@ function forkRepo() {
     headers: {
       Authorization: `token ${token}`
     }
-  }).then(res => {
+  }).then(res => res.json().then(json =>console.log(json))
   let repo = new Repo(res)
   showForkedRepo(repo)
 })
