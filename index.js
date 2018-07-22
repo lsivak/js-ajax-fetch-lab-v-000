@@ -21,11 +21,11 @@ function forkRepo() {
 
   fetch(`https://api.github.com/repos/${reps}/forks`, {
     method: 'POST',
-    body: JSON.stringify(showForkedRepo(repo)),
+
     headers: {
       Authorization: `token ${getToken()}`
     }
-  }).then(res => res.json()).then(json => console.log(json));
+  }).then(res => res.json(showForkedRepo(repo))).then(json => console.log(json));
 }
 function showForkedRepo(repo) {
   $("#results").html(repo)
