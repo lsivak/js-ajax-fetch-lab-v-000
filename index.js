@@ -20,7 +20,7 @@ function forkRepo() {
     const postData = {
   body: showForkedRepo(repo)
 };
-  
+
   fetch(`https://api.github.com/repos/${repo}`, {
     method: 'POST',
     body: JSON.stringify(showForkedRepo(repo)),
