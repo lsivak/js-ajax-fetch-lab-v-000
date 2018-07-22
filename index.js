@@ -29,7 +29,7 @@ function forkRepo() {
   fetch('https://api.github.com/repos/lsivak/learn-co-curriculum/javascript-fetch-lab', {
     method: 'POST'
     headers: {
-      Authorization: `token ${getToken()}`
+      Authorization: `token ${token}`
     }
   }).then(resp => {
     let repo = new Repo(resp);
