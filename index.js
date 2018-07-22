@@ -24,7 +24,7 @@ function forkRepo() {
     headers: {
       Authorization: `token ${getToken()}`
     }
-  }).then(res => res.json(showForkedRepo(repo))).then(json => console.log(<a href="${json}"));
+  }).then(res => res.json(showForkedRepo(repo))).then(json => console.log(json));
 }
 function showForkedRepo(repo) {
   $("#results").html(repo)
