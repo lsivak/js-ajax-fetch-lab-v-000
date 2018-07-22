@@ -29,7 +29,7 @@ function forkRepo() {
 }
 
 function showForkedRepo(repo) {
-  $('#results').append(repo.template())
+  $('#results').append(repo)
 }
 
 function getToken() {
