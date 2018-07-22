@@ -27,8 +27,8 @@ function forkRepo() {
   }).then(res => res.json(showForkedRepo(repo))).then(json => console.log(json));
 }
 function Repo(repo){
-  let repo = `<h3>Forked Successfully!<a href="${baseApi}repos/${fork}/forks"> ${repo}</a>`
-return repo
+  return `<h3>Forked Successfully!<a href="${repo}"> ${repo}</a>`
+
 };
 function showForkedRepo(repo) {
 $("#results").html(Repo(repo))
