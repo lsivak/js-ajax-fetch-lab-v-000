@@ -14,6 +14,11 @@ function createIssue() {
 function showResults(json) {
 }
 
+Repo.prototype.template = function(){
+  var template = `<h3>Forked Successfully!</h3><a href="${this.url}"> ${this.url}</a>`
+  return template;
+};
+
 function forkRepo() {
       const token = ' da4f675e128aa66a149793db2bead57d6c6490a6';
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
