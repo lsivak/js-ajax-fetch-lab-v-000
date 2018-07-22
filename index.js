@@ -2,7 +2,7 @@ const userName = 'lsivak'
 const baseApi = 'https://api.github.com/'
 const fork = `${userName}/javascript-fetch-lab`
 const reps = 'learn-co-curriculum/javascript-fetch-lab'
-
+debugger
 function getIssues() {
 }
 
