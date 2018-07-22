@@ -3,6 +3,7 @@ const baseApi = 'https://api.github.com/'
 const fork = `${userName}/javascript-fetch-lab`
 const reps = 'learn-co-curriculum/javascript-fetch-lab'
   let repo = `${baseApi}repos/${reps}/forks`
+  const forked = `${baseApi}repos/${fork}/forks`
 function getIssues() {
 }
 
