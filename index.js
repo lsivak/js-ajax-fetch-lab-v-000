@@ -2,6 +2,7 @@ const userName = 'lsivak'
 const baseApi = 'https://api.github.com/'
 const fork = `${userName}/javascript-fetch-lab`
 const reps = 'learn-co-curriculum/javascript-fetch-lab'
+  let repo = `${baseApi}repos/${reps}/forks`
 debugger
 function getIssues() {
 }
@@ -27,7 +28,6 @@ function forkRepo() {
   }).then(res => res.json()).then(json => console.log(json));
 }
 function showForkedRepo(repo) {
-  let repo = `${baseApi}repos/${reps}/forks`
   $('#results').append(repo)
 }
 
