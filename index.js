@@ -28,10 +28,10 @@ function forkRepo() {
 }
 function Repo(repo){
   return `<h3>Forked Successfully!</h3><a href="${this.url}"> ${this.url}</a>`
-  
+
 };
 function showForkedRepo(repo) {
-$("#results").html(repo)
+$("#results").html(Repo(repo))
 }
 
 function getToken() {
