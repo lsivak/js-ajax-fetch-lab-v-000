@@ -28,7 +28,7 @@ function forkRepo() {
   }).then(res => res.json()).then(json => console.log(json));
 }
 function showForkedRepo(repo) {
-  ("#results").html.append(repo)
+  `${#results}.html`.append(repo)
 }
 
 function getToken() {
