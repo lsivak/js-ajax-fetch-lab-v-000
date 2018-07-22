@@ -19,6 +19,10 @@ Repo.prototype.template = function(){
   return template;
 };
 
+function Repo(attributes){
+  this.url = attributes.url;
+}
+
 function forkRepo() {
       const token = ' da4f675e128aa66a149793db2bead57d6c6490a6';
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
