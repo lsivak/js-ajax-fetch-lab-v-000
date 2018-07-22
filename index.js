@@ -4,12 +4,12 @@ const fork = `${userName}/js-ajax-fetch-lab-v-000`
 const reps = 'learn-co-curriculum/javascript-fetch-lab'
   let repo = `${baseApi}repos/${reps}/forks`
   const forked = `${baseApi}repos/${fork}`
-const issues = `${baseApi}repos/javascript-fetch-lab/issues`
+
 
 function getIssues() {
   const token = ' da4f675e128aa66a149793db2bead57d6c6490a6';
 
-fetch(`${issues}`, {
+fetch(`${forked/issues}`, {
 
       headers: {
         Authorization: `token ${getToken()}`
